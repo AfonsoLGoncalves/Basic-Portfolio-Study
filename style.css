@@ -34,7 +34,8 @@ h2 {
   font-size: 24px;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   font-weight: 400;
 }
@@ -56,6 +57,7 @@ button {
 header {
   height: calc(100vh - 65px);
   display: flex;
+  align-items: center;
 }
 
 header .container {
@@ -63,6 +65,11 @@ header .container {
   width: 50%;
   padding: 0 100px;
   align-items: center;
+}
+
+header .container img {
+  display: none;
+  margin-bottom: 70px;
 }
 
 header .container h1 {
@@ -75,12 +82,20 @@ header .container button {
 
 nav {
   display: flex;
-  background-color: var(--bg-dark);
-  height: 75px;
   align-items: center;
   justify-content: space-between;
+
+  background-color: var(--bg-dark);
+  height: 75px;
+  padding: 0 100px;
   position: sticky;
   top: 0;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav img {
@@ -91,10 +106,50 @@ nav ul a {
   font-size: 24px;
   text-decoration: none;
   color: var(--green);
-  margin: 61px;
 }
 
 section {
   background-color: purple;
   height: 15000px;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+  header .container {
+    width: 100%;
+  }
+
+  nav ul a {
+    font-size: 18px;
+  }
+
+  nav {
+    padding: 0 30px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  header .container img {
+    display: inline;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul a {
+    font-size: 16px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+  header .container {
+    padding: 0 40px;
+  }
 }
