@@ -84,7 +84,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background-color: var(--bg-dark);
   height: 75px;
   padding: 0 100px;
@@ -108,6 +107,10 @@ nav ul a {
   color: var(--green);
 }
 
+nav ul a svg {
+  display: none;
+}
+
 section {
   background-color: purple;
   height: 15000px;
@@ -116,7 +119,7 @@ section {
 /* Responsiveness */
 @media (max-width: 1000px) {
   header .container {
-    width: 100%;
+    width: 100%;
   }
 
   nav ul a {
@@ -151,5 +154,18 @@ section {
 @media (max-width: 480px) {
   header .container {
     padding: 0 40px;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
   }
 }
