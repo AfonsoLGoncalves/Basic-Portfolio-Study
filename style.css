@@ -111,9 +111,41 @@ nav ul a svg {
   display: none;
 }
 
-section {
-  background-color: purple;
-  height: 15000px;
+/* About-me */
+.about-me {
+  display: flex;
+  padding: 100px;
+}
+
+.about-me .container {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.about-me .img-container {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.about-me .img-container img {
+  width: 70%;
+  height: 100%;
+}
+
+.about-me .img-container .line {
+  width: calc(70% + 50px);
+  height: calc(100% + 50px);
+  border: 1px solid var(--purple);
+
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 70% / 2 - 25px);
+}
+
+.about-me .img-container .line:nth-child(1) {
+  border: 1px solid var(--green);
+  transform: rotate(-3.3deg);
 }
 
 /* Responsiveness */
