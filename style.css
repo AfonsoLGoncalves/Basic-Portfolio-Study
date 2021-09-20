@@ -185,19 +185,20 @@ nav ul a svg {
 }
 
 /* Portfolio */
-.portfolio-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-
 .portfolio {
   padding: 0 100px;
   margin-bottom: 100px;
   text-align: center;
   background: url('assets/Portfolio-Background.png');
+  height: 800px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 130px;
 }
 
 .portfolio .portfolio-container .portfolio-card {
@@ -224,6 +225,18 @@ nav ul a svg {
   width: 100%;
 }
 
+.portfolio .portfolio-container .portfolio-card .img-container .line {
+  width: calc(100% -24px);
+  height: calc(100% -24px);
+  border: 1px solid var(--green);
+  transform: rotate(-1.93deg);
+  border-radius: 16px;
+
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 100% / 2 - 12px);
+}
+
 .portfolio .portfolio-container .portfolio-card .language-container ul {
   display: flex;
   list-style: none;
@@ -241,7 +254,7 @@ nav ul a svg {
   margin-left: 10px;
 }
 
-.portfolio .language-container p{
+.portfolio .language-container p {
   margin: 0;
 }
 
@@ -277,19 +290,26 @@ nav ul a svg {
     margin: 70px 0;
   }
 
-  .services {
+  .services,
+  .portfolio {
     padding: 0;
   }
 
-  .services .services-container {
+  .services .services-container,
+  .portfolio .portfolio-container {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 
-  .service-card + .service-card {
+  .service-card + .service-card,
+  .portfolio-card + .portfolio-card {
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  .portfolio {
+    height: 100%;
   }
 }
 
@@ -314,6 +334,10 @@ nav ul a svg {
 
 /* Smartphone */
 @media (max-width: 480px) {
+  body {
+    margin-bottom: 150px;
+  }
+
   header .container {
     padding: 0 40px;
   }
@@ -343,7 +367,16 @@ nav ul a svg {
     margin: 70px 0;
   }
 
-  .services .services-container {
+  .services .services-container,
+  .portfolio .portfolio-container {
     padding: 0 20px;
+  }
+
+  .portfolio-container {
+    margin-top: 70px;
+  }
+
+  .portfolio {
+    margin: 100px 0 50px;
   }
 }
