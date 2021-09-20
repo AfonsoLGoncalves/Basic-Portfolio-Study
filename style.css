@@ -77,7 +77,7 @@ header .container h1 {
 }
 
 header .container button {
-  margin-top: 40px;
+  margin: 40px;
 }
 
 nav {
@@ -151,7 +151,44 @@ nav ul a svg {
   transform: rotate(-3.3deg);
 }
 
+/* Services */
+.services h1 {
+  margin-bottom: 60px;
+}
+
+.services {
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services .services-container .service-card {
+  max-width: 360px;
+  background-color: #2f3034;
+  border: 1px solid var(--purple);
+  border-radius: 16px;
+  padding: 40px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.services .services-container .service-card svg {
+  margin-bottom: 40px;
+}
+
 /* Responsiveness */
+/* Small-desktops */
 @media (max-width: 1000px) {
   header .container {
     width: 100%;
@@ -180,6 +217,21 @@ nav ul a svg {
 
   .about-me .img-container {
     margin: 70px 0;
+  }
+
+  .services {
+    padding: 0;
+  }
+
+  .services .services-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card + .service-card {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
@@ -227,5 +279,13 @@ nav ul a svg {
 
   .about-me {
     padding: 40px;
+  }
+
+  .services {
+    margin: 70px 0;
+  }
+
+  .services .services-container {
+    padding: 0 20px;
   }
 }
