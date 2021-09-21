@@ -358,6 +358,17 @@ nav ul a svg {
   .portfolio {
     height: 100%;
   }
+
+  .curriculum .container {
+    flex-wrap: wrap;
+  }
+
+  .curriculum .container img {
+    display: block;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 520px;
+  }
 }
 
 /* Tablet */
@@ -403,7 +414,7 @@ nav ul a svg {
 
   nav ul a svg {
     display: block;
-    margin: 0 auto 10px;
+   margin: 0 auto 10px;
   }
 
   .about-me {
@@ -426,4 +437,12 @@ nav ul a svg {
   .portfolio {
     margin: 100px 0 50px;
   }
+
+  .curriculum {
+    padding: 0 20px;
+  }
+
+  .curriculum .container .content .curriculum-info {
+    padding: 0 15px;
+  } 
 }
