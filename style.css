@@ -363,7 +363,7 @@ nav ul a svg {
     flex-wrap: wrap;
   }
 
-  .curriculum .container img {
+  .curriculum .container .curriculum-img {
     display: block;
     margin: 0 auto 50px;
     width: 100%;
