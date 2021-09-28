@@ -32,14 +32,14 @@
     <nav>
       <img src="assets/Logo.png" alt="logo" />
       <ul>
-        <a href=""><i data-feather="user"></i>Sobre mim</a>
-        <a href=""><i data-feather="briefcase"></i>Serviços</a>
-        <a href=""><i data-feather="image"></i>Portifólio</a>
-        <a href=""><i data-feather="list"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#aboutMe"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portifólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
       </ul>
     </nav>
-    <section class="about-me">
+    <section id="aboutMe" class="about-me">
       <div class="container">
         <h1>Sobre mim</h1>
         <p>
@@ -62,7 +62,7 @@
           <img src="assets/Afonso-lima.jpeg" alt="foto do Afonso Gonçalves" />
     </div>
   </section>
-  <section class="services">
+  <section id="services" class="services">
     <h1>Serviços</h1>
     <div class="services-container">
       <div class="service-card">
@@ -82,7 +82,7 @@
       </div>
     </div>
   </section>
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <h1>Portifolio</h1>
     <div class="portfolio-container">
       <div class="portfolio-card">
@@ -138,7 +138,7 @@
       </div>
     </div>
   </section>
-  <section class="curriculum">
+  <section id="curriculum" class="curriculum">
     <h1>Currículo</h1>
     <div class="container">
       <img class="curriculum-img" src="assets/curriculum-img.png">
@@ -155,12 +155,24 @@
            <span>Idiomas</span><b>inglês avançado</b>
          </div>
          <button class="secondary-button">
-          <i data-feather="download"></i>
+           <i data-feather="download"></i>
            Baixe meu curriculum completo
           </button>
        </div>
     </div>
   </section>
+  <section id="contact" class="contact">
+    <h1>Vamos trabalhar Juntos?</h1>
+    <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papelou faça parte do seu time entre em contato comigo!</p>
+    <button onclick="window.open('https://api.whatsapp.com/send?phone=555599999999&text=Ola')">Entre em contato</button>
+    <div class="social-media">
+      <a href=""><i data-feather="instagram"></i></a>
+      <a href=""><i data-feather="youtube"></i></a>
+      <a href=""><i data-feather="linkedin"></i></a>
+      <a href=""><i data-feather="twitter"></i></a>
+    </div>
+  </section>
+  <footer><p>Made by Afonso Santos - 2021</p></footer>
     <script>
       feather.replace()
     </script>
